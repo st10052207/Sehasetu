@@ -1,0 +1,16 @@
+{
+  "name": "sehasetu-healthcare",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bilingual elder-care coordination website for SEHASETU Healthcare.",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check app.js && node --check server.js",
+    "test": "node --test"
+  }
+}
