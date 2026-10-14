@@ -52,6 +52,10 @@ Deploy as a **long-running Node.js service with Node 24+ and persistent writable
 
 Photographs and fonts load from Pexels and Google Fonts; an internet connection is needed for these optional visual assets. Review image licensing and confirm the final images, fonts, and their attributions meet your intended deployment requirements.
 
+### Render visual-preview staging
+
+The repository includes a `render.yaml` Blueprint for a free `sehasetu-staging` web service deployed from `main`. In the Render Dashboard, choose **New → Blueprint**, connect this GitHub repository, and apply the Blueprint. Render builds with the project checks, starts `npm start`, and checks `/api/health`. The free service may sleep while idle and has ephemeral storage; it is for visual review only. Do not add `ADMIN_PASSWORD` or `ENCRYPTION_KEY` to this staging service and do not submit real patient information. Intake remains disabled unless both secrets are deliberately configured. A public service URL is assigned by Render after the Blueprint is created and its first deployment succeeds.
+
 ## Launch checklist
 
 Before taking actual enquiries, supply and professionally review the official phone number, business email, WhatsApp Business link, responsible legal-entity details, approved service areas, real provider terms and rates, response and grievance contacts, and final privacy, cancellation, and terms documents. Confirm partner eligibility and verification procedures, service and clinical boundaries, consent wording, retention and access policies, secure backups, and a properly secured HTTPS deployment. Do not publish invented provider credentials, availability, prices, office addresses, reviews, or outcomes.
