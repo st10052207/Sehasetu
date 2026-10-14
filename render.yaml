@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sehasetu-staging
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm run check && npm test
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.21.0
+      - key: NODE_ENV
+        value: production
